@@ -1,0 +1,26 @@
+import java.util.*;
+public class Jav
+{
+	public static void main(String args[])
+	{
+		int c,n1,temp=0;
+		Scanner scnr=new Scanner(System.in);
+		int n=scnr.nextInt();
+		for(int i=n;i<=5;i++)
+		{
+			n =i;
+			while(n>0)
+			{
+				n1=n%10;
+				temp=temp+(n1+n1+n1);
+				n = n/10;
+			}
+			if(temp==i)
+			{
+					System.out.println(i);
+			}
+				temp=0;
+		}
+		
+	}
+}
